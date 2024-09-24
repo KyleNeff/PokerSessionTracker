@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Blinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:text="@string/_1_2_nle"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/_8_2_2023"
+        android:textColor="#5A5A5A"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@id/Blinds"
+        app:layout_constraintTop_toBottomOf="@+id/Blinds" />
+
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="@string/new_285"
+        android:textColor="#5A5A5A"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dollarSign"
+        app:layout_constraintTop_toTopOf="@+id/overall"
+/>
+
+    <TextView
+        android:id="@+id/overall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:text="@string/overall"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/Blinds"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/BuyIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In for X, Out for Y"
+        android:textColor="#5A5A5A"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/blindPerHour"
+        app:layout_constraintTop_toBottomOf="@+id/blindPerHour" />
+
+    <TextView
+        android:id="@+id/Bigs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="320dp"
+        android:text="@string/_142_5_bigs"
+        android:textColor="#5A5A5A"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/dollarSign"
+        app:layout_constraintTop_toBottomOf="@+id/dollarSign"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/blindPerHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_11_big_blinder_per_hour_for_8_hours_and_38_minutes"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/Bigs"
+        app:layout_constraintTop_toBottomOf="@+id/Bigs" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="450dp"
+        android:layout_height="873dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:srcCompat="@drawable/homegradient" />
+
+    <TextView
+        android:id="@+id/dollarSign"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/dollarSign"
+        android:textColor="#5A5A5A"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/overall"
+        app:layout_constraintTop_toBottomOf="@+id/overall"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0000FF"
+        android:onClick="new_Main"
+        android:text="@string/x"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

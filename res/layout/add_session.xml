@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="582dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-20dp"
+        app:srcCompat="@drawable/homegradient" />
+
+    <Button
+        android:id="@+id/addInfoButton"
+        android:layout_width="124dp"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="253dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="658dp"
+        android:background="@android:color/transparent"
+        android:onClick="sesh_infoButton"
+        android:text="@string/checkMark"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_the_following"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/date_month_day_year"
+            android:inputType="date"
+
+
+            />
+
+        <EditText
+            android:id="@+id/StartTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/time_started_hh_mm"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/EndTime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/time_ended"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/SmallBlind"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/small_blind"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/BigBlind"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/big_blind"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Buyin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/buy_in_amount"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Cashout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/cash_out"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
